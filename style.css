@@ -78,6 +78,7 @@ form button {
   background-color: white;
   padding: 0 12px;
   position: relative;
+  transition: all 1s;
 }
 
 .button-text {
@@ -90,7 +91,7 @@ form button {
   height: 100%;
 }
 
-.google-button div {
+.google-button .button-box {
   flex-basis: calc(100% / 3);
   flex-grow: 1;
   flex-shrink: 1;
@@ -123,10 +124,6 @@ form button {
   height: 14px;
   width: 14px;
   margin-right: 16px;
-}
-
-button:hover {
-  background-color: lightgray;
 }
 
 .google-logo {
@@ -172,7 +169,6 @@ label {
   color: gray;
 }
 
-
 .text-inputs input {
   display: block;
   height: 36px;
@@ -184,8 +180,12 @@ label {
   padding-bottom: 0.5rem;
 }
 
-input:hover {
-  background-color: lightgray;
+button:hover, .submission input:hover {
+  animation: colorParty 2s ease-in-out infinite alternate;
+}
+
+.text-inputs section > input:hover {
+  background-color: lightgrey;
 }
 
 .password-strength-bar {
@@ -217,3 +217,18 @@ input:hover {
   background-color: coral;
   color: white;
 }
+
+
+@keyframes colorParty {
+  0% { 
+    background-color: dodgerblue;
+  }
+
+  50% {
+    background-color: hotpink;
+  }
+
+  100% {
+    background-color: lightgrey;
+  }
+ }
