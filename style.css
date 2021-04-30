@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 100px auto;
+  height: 100vh;
+  min-width: 222px;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    grid-template-rows: auto;
+    grid-template-columns: 30% auto;
+  }
+}
+
+header {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 8px 8px 8px;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    font-size: 16px;
+  }
+}
+
+main {
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  padding: 10px; 
+}
+
+form {
+  margin-top: 60px;
+  width: 100%;
+  height: 300px;
+  max-width: 450px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form h1 {
+  font-size: 18px;
+}
+
+form p {
+  margin-top: 10px;
+  color: gray;
+}
+
+.button-container {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: auto 40px 40px;
+  column-gap: 10px;
+}
+
+form button {
+  height: 40px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: white;
+  padding: 0 12px;
+  position: relative;
+}
+
+.button-text {
+  width: 100%;
+  height: 100%;
+}
+
+.google-button {
+  display: flex;
+  height: 100%;
+}
+
+.google-button div {
+  flex-basis: calc(100% / 3);
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+}
+
+#box-3 {
+  flex-shrink: 2;
+}
+
+.google-button-text {
+  white-space: nowrap;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-box:first-child > span {
+  margin-right: auto;
+}
+
+.button-box:first-child > span:before {
+  content: "";
+  display: block;
+  background-image: url("./images/google.svg");
+  background-size: 14px 14px;
+  height: 14px;
+  width: 14px;
+  margin-right: 16px;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+.google-logo {
+  display: block;
+  background-image: url("./images/google.svg");
+  background-size: 18px 18px;
+  height: 18px;
+  width: 18px;
+  margin-right: 12px;
+}
+
+.facebook-button:before {
+  display: block;
+  content: '';
+  background-image: url("./images/facebook.svg");
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.twitter-button:before {
+  content: "";
+  display: block;
+  background-image: url("./images/twitter.svg");
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.centered {
+  text-align: center;
+}
+
+#or {
+  margin-top: 24px;
+}
+
+form section {
+  margin-bottom: 3rem;
+}
+
+label {
+  color: gray;
+}
+
+
+.text-inputs input {
+  display: block;
+  height: 36px;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  padding-bottom: 0.5rem;
+}
+
+input:hover {
+  background-color: lightgray;
+}
+
+.password-strength-bar {
+  margin-top: 14px;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+
+.password-strength-item {
+  flex: 1;
+  height: 6px;
+  border-radius: 4px;
+  background-color: gray;
+}
+.password-strength-item.active {
+  background-color: limegreen;
+}
+
+.password-strength h2 {
+  font-size: 14px;
+}
+
+.create-account {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: coral;
+  color: white;
+}

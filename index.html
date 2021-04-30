@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Inl. 2</title>
+</head>
+<body>
+  <header>
+    <h2>Wesley Snipes Inc.</h2>
+  </header>
+  <main>
+    <form>
+      <h1>Sign up to Wesley Snipes</h1>
+      <p>Already have an account? <a href="#">Log in.</a></p>
+      <div class="button-container">
+        <button class="google-button">
+          <div class="button-box"><span></span></div>
+          <div class="button-box"><span class="google-button-text">Sign up with Google</span></div>
+          <div class="button-box" id="box-3"><span></span></div>
+        </button>
+        <button class="facebook-button"></button>
+        <button class="twitter-button"></button>
+      </div>
+      <p class="centered" id="or">- OR -</p>
+      <section class="text-inputs">
+        <section class="name">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="full-name" id="full-name">
+        </section>
+        <section class="email">
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email">
+        </section>
+        <section class="password">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+        </section>
+      </section>
+      <section class="password-strength">
+        <h2>Password strength</h2>
+        <div class="password-strength-bar">
+          <div class="password-strength-item active"></div>
+          <div class="password-strength-item active"></div>
+          <div class="password-strength-item active"></div>
+          <div class="password-strength-item"></div>
+        </div>
+      </section>
+      <section class="terms">
+        <input type="checkbox" name="terms" id="yes" value="yes">
+        <label for="yes">I accept the <a href="#">Terms of Service</a></label>
+      </section>
+      <section class="submission">
+        <input type="submit" value="I love Wesley Snipes!" class="create-account">
+      </section>
+    </form>
+  </main>
+</body>
+</html>
